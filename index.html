@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spoken-Tutorial</title>
+    <link rel="shortcut icon" href="http://www.raemacias.com/images/HTML5-CSS3-JS.jpg">
+    <link rel="stylesheet" href="themes/tutorial.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/jquery.js"></script>
+</head>
+
+<body>
+    <section data-role="page" id="home" data-theme="b">
+        <!--home-->
+        <!--Panel Left-->
+        <div data-role="panel" id="left-panel" class="ui-panel ui-panel-position-left ui-panel-display-push ui-body-inherit ui-panel-animate ui-panel-open">
+            <div class="ui-panel-inner">
+                <ul data-role="listview" class="ui-listview">
+                    <li data-icon="delete" class="ui-first-child"><a href="#" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-delete">Close</a>
+                    </li>
+                    <li><a href="#home" class="ui-btn ui-state-disabled">Home</a>
+                    </li>
+                    <li><a href="#cm" class="ui-btn">Contact Me</a>
+                    </li>
+                    <li><a href="#rta" class="ui-btn">Rate this app</a>
+                    </li>
+                    <li><a href="#info" class="ui-btn">About Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--Panel Left End-->
+        <!--header-->
+        <div data-role="header" role="banner" class="ui-header ui-bar-inherit">
+            <h1 class="ui-title" role="heading" aria-level="1">Spoken - Tutorials</h1>
+            <img src="http://spoken-tutorial.org/static/spoken/images/home-banner.jpg" alt="" class="header-img">
+            <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Menu</a>
+        </div>
+        <!--header end-->
+        <article data-role="content" data-theme="b">
+            <!--content-->
+            <p>Interested in learning Free and Open Source Software? In your mother-tongue? Look no further!!!</p>
+            <p>Welcome to the Spoken Tutorial project. The Spoken Tutorial project is the initiative of the "Talk to a Teacher" project of the National Mission on Education through Information and Communication Technology, launched by MHRD, Govt of India.</p>
+            <p>Here you will find a variety of Spoken Tutorials on various Free and Open Source Software (FOSS) in various Indian regional languages.</p>
+            <div class="choice_list" data-theme="b">
+                <h1>Please select a tutorial</h1>
+                <ul data-role="listview" data-inset="true" data-theme="b">
+                    <li>
+                        <a href="#start" data-transition="pop" data-theme="b">
+                            <img src="http://sd.keepcalm-o-matic.co.uk/i/get-coffee-and-start-coding.png" alt="" />
+                            <h3>Start Tutorial</h3>
+                            <p>Start learning basic programming language.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about" data-transition="pop" data-theme="b">
+                            <img src="http://spoken-tutorial.org/static/spoken/images/logo.png" alt="" />
+                            <h3>Our Objective</h3>
+                            <p>Programming is simple!!!!</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" class="ui-btn ui-state-disabled" data-icon="home" data-iconpos="top">Home</a>
+                    </li>
+                    <li><a href="#info" class="ui-btn" data-icon="info" data-iconpos="top">About Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section data-role="page" id="start" data-theme="b" data-dialog="false">
+        <!--home-->
+        <!--Panel Left-->
+        <div data-role="panel" id="left-panel" class="ui-panel ui-panel-position-left ui-panel-display-push ui-body-inherit ui-panel-animate ui-panel-open">
+            <div class="ui-panel-inner">
+                <ul data-role="listview" class="ui-listview">
+                    <li data-icon="delete" class="ui-first-child"><a href="#" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-delete">Close</a>
+                    </li>
+                    <div data-role="collapsible" data-collapsed="true">
+                        <h4>Front End Tutorials</h4>
+                        <ul data-role="listview">
+                            <li><a href="#lhtml1" data-pageNum="1" class="ui-btn">HTML Baisc</a>
+                            </li>
+                            <li><a href="#lhtml2" data-pageNum="2" class="ui-btn">HTML Advance</a>
+                            </li>
+                            <li><a href="#lhtml3" data-pageNum="3" class="ui-btn">HTML 5</a>
+                            </li>
+                            <li><a href="#lhtml4" data-pageNum="4" class="ui-btn">CSS Basic</a>
+                            </li>
+                            <li><a href="#lhtml5" data-pageNum="5" class="ui-btn">SASS</a>
+                            </li>
+                            <li><a href="#lhtml6" data-pageNum="6" class="ui-btn">php</a>
+                            </li>
+                            <li><a href="#lhtml7" data-pageNum="7" class="ui-btn">JavaScript</a>
+                            </li>
+                            <li><a href="#lhtml8" data-pageNum="8" class="ui-btn">AJAX</a>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <!--Panel Left End-->
+        <!--header-->
+        <div data-role="header" role="banner" class="ui-header ui-bar-inherit" data-theme="b">
+            <h1 class="ui-title" role="heading" aria-level="1">Lets Start</h1>
+            <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Menu</a>
+        </div>
+        <!--header end-->
+        <!--Frontpage-->
+        <article data-role="content" data-theme="b">
+            <!--content-->
+            <h1>
+               <p>This is the elearning audio - video tutorials for front end development</p>
+            </h1>
+            <h2>
+               <p>Click on the top left corner to begin with HTML</p>
+            </h2>
+            <a href="#lhtml1" id="startTut" class="ui-shadow ui-btn ui-corner-all" data-transition="pop" data-theme="b">Start Tutorial</a>
+            <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#home" class="ui-btn" data-icon="home" data-iconpos="top">Home</a>
+                        </li>
+                        <li><a href="#info" class="ui-btn" data-icon="info" data-iconpos="top">About Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section data-role="page" id="about" data-theme="b" data-dialog="false">
+        <!--header-->
+        <div data-role="header" role="banner" class="ui-header ui-bar-inherit" data-theme="b">
+            <h1 class="ui-title" role="heading" aria-level="1">About Spoken - Tutorial</h1>
+        </div>
+        <!--header end-->
+        <!--Frontpage-->
+        <article data-role="content" data-theme="b">
+            <!--content-->
+            <p>The Spoken Tutorial project is the initiative of the ‘Talk to a Teacher’ activity of the National Mission on Education through Information and Communication Technology (ICT), launched by the Ministry of Human Resources and Development, Government of India.</p>
+            <p>The use of spoken tutorials to popularize software development and its use will be coordinated through this website.</p>
+            <p>(The Spoken Tutorial project is being developed by IIT Bombay for MHRD, Government of India)!</p>
+            <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#home" class="ui-btn" data-icon="home" data-iconpos="top">Home</a>
+                        </li>
+                        <li><a href="#info" class="ui-btn" data-icon="info" data-iconpos="top">About Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section data-role="page" id="lhtml1" data-theme="b" data-dialog="true" data-close-btn="none">
+        <!--home-->
+        <div data-role="header" data-theme="b">
+            <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>HTML Basic</h1>
+        </div>
+        <article data-role="content" data-theme="b">
+            <!--content-->
+            <h1>Watch this video for learning HTML Basics</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bWPMSSsVdPk" frameborder="0" allowfullscreen></iframe>
+            <b>
+               <p>After watching the video. Practise the Basic HTML tags.</p>
+            </b>
+            <a href="#start" class="ui-state-disabled ui-btn ui-icon-arrow-l ui-btn-icon-left" data-theme="b">Back</a>
+            <a href="#lhtml2" class="ui-btn ui-icon-arrow-r ui-btn-icon-right nextPage" data-theme="b">HTML Advance</a>
+        </article>
+    </section>
+
+    <section data-role="page" id="lhtml2" data-theme="b" data-dialog="true" data-close-btn="none">
+        <!--home-->
+        <div data-role="header" data-theme="b">
+            <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>HTML Advance</h1>
+        </div>
+        <article data-role="content" data-theme="b">
+            <!--content-->
+            <h1>Watch this video for learning HTML Advance</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MTb7zcsBpiI" frameborder="0" allowfullscreen></iframe>
+            <b>
+               <p>After watching the video. Practise the Advance HTML tags.</p>
+            </b>
+            <a href="#lhtml1" class="ui-btn ui-icon-arrow-l ui-btn-icon-left backPage" data-theme="b">Back</a>
+            <a href="#lhtml3" class="ui-btn ui-icon-arrow-r ui-btn-icon-right nextPage" data-theme="b">HTML 5</a>
+        </article>
+    </section>
+
+    <section data-role="page" id="lhtml3" data-theme="b" data-dialog="true" data-close-btn="none">
+        <!--home-->
+        <div data-role="header" data-theme="b">
+            <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>HTML 5</h1>
+        </div>
+        <article data-role="content" data-theme="b">
+            <!--content-->
+            <h1>Watch this video for learning HTML 5</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kDyJN7qQETA" frameborder="0" allowfullscreen></iframe>
+            <b>
+               <p>After watching the video. Practise the HTML 5</p>
+            </b>
+            <a href="#lhtml2" class="ui-btn ui-icon-arrow-l ui-btn-icon-left backPage" data-theme="b">Back</a>
+            <a href="#lhtml4" class="ui-btn ui-icon-arrow-r ui-btn-icon-right nextPage" data-theme="b"><img src="http://www.rachellcalhoun.com/media/css3.gif">CSS 3</a>
+        </article>
+    </section>
+
+    <section data-role="page" id="lhtml4" data-theme="b" data-dialog="true" data-close-btn="none">
+        <!--home-->
+        <div data-role="header" data-theme="b">
+            <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>CSS 3</h1>
+        </div>
+        <article data-role="content" data-theme="b">
+            <!--content-->
+            <h1>Watch this video for learning CSS3</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CUxH_rWSI1k" frameborder="0" allowfullscreen></iframe>
+            <b>
+               <p>After watching the video. Practise CSS 3</p>
+            </b>
+            <a href="#lhtml3" class="ui-btn ui-icon-arrow-l ui-btn-icon-left backPage" data-theme="b">Back</a>
+            <a href="#lhtml5" class="ui-btn ui-icon-arrow-r ui-btn-icon-right nextPage" data-theme="b"><img src="http://www.rachellcalhoun.com/media/css3.gif">SASS</a>
+        </article>
+    </section>
+
+    <section data-role="page" id="lhtml5" data-theme="b" data-dialog="true" data-close-btn="none">
+        <!--home-->
+        <div data-role="header" data-theme="b">
+            <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>SASS</h1>
+        </div>
+        <article data-role="content" data-theme="b">
+            <!--content-->
+            <h1>Watch this video for learning SASS</h1>
+            <img src="http://i1237.photobucket.com/albums/ff470/mkrulia/ClassSass_zpsf888fdd8.png" />
+            <b>
+               <p>Too Sassy for you</p>
+            </b>
+            <a href="#lhtml4" class="ui-btn ui-icon-arrow-l ui-btn-icon-left backPage" data-theme="b">Back</a>
+            <a href="#lhtml6" class="ui-btn ui-icon-arrow-r ui-btn-icon-right nextPage" data-theme="b">PHP</a>
+        </article>
+    </section>
+
+    <section data-role="page" id="lhtml6" data-theme="b" data-dialog="true" data-close-btn="none">
+        <!--home-->
+        <div data-role="header" data-theme="b">
+            <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1><i>php</i></h1>
+        </div>
+        <article data-role="content" data-theme="b">
+            <!--content-->
+            <h1>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/k3325CA-LgY" frameborder="0" allowfullscreen></iframe>
+            <b>
+                <p>Common Way to Display HTML using <i>php</i></p>
+            </b>
+            <a href="#lhtml5" class="ui-btn ui-icon-arrow-l ui-btn-icon-left backPage" data-theme="b">Back</a>
+            <a href="#lhtml7" class="ui-btn ui-icon-arrow-r ui-btn-icon-right nextPage" data-theme="b">JavaScript</a>
+        </article>
+    </section>
+
+    <section data-role="page" id="lhtml7" data-theme="b" data-dialog="true" data-close-btn="none">
+        <!--home-->
+        <div data-role="header" data-theme="b">
+            <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1><b>JavaScript</b></h1>
+        </div>
+        <article data-role="content" data-theme="b">
+            <!--content-->
+            <h1><p>JavaScript is the programming language of HTML and the Web.</p>
+
+                <p>Programming makes computers do what you want them to do.</p>
+
+<p>JavaScript is easy to learn.</p>
+</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XL9Ri8pO68w" frameborder="0" allowfullscreen></iframe>
+
+            <a href="#lhtml6" class="ui-btn ui-icon-arrow-l ui-btn-icon-left backPage" data-theme="b">Back</a>
+            <a href="#lhtml8" class="ui-btn ui-icon-arrow-r ui-btn-icon-right nextPage" data-theme="b">Ajax</a>
+        </article>
+    </section>
+
+    <section data-role="page" id="lhtml8" data-theme="b" data-dialog="true" data-close-btn="none">
+        <!--home-->
+        <div data-role="header" data-theme="b">
+            <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1><b>AJAX</b></h1>
+        </div>
+        <article data-role="content" data-theme="b">
+            <!--content-->
+            <h1>Ajax is a set of web development techniques utilizing many web technologies used on the client-side to create asynchronous Web applications.
+</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/IyCnbyWZkRU" frameborder="0" allowfullscreen></iframe>
+
+            <a href="#lhtml7" id="back" class="ui-btn ui-icon-arrow-l ui-btn-icon-left" data-theme="b">Back</a>
+            <a href="#rta" class="ui-btn ui-icon-arrow-r ui-btn-icon-right" data-theme="b">Congratulation!! you are a programmer now. Click this button to rate the app </a>
+        </article>
+    </section>
+
+
+    <section data-role="page" id="rta" data-theme="b" data-dialog="true" data-close-btn="none">
+        <!--home-->
+        <div data-role="header" data-theme="b">
+            <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1><b>Rate this App</b></h1>
+        </div>
+        <form>
+            <label>
+                <input type="radio" name="radio-choice-0" id="radio-choice-0a">One
+            </label>
+            <label for="radio-choice-0b">Two</label>
+            <input type="radio" name="radio-choice-0" id="radio-choice-0b" class="custom">
+            <label>
+                <input type="radio" name="radio-choice-0" id="radio-choice-0a">Three
+            </label>
+            <label>
+                <input type="radio" name="radio-choice-0" id="radio-choice-0a">Four
+            </label>
+            <label>
+                <input type="radio" name="radio-choice-0" id="radio-choice-0a">Five
+            </label>
+        </form>
+        <article data-role="content" data-theme="b">
+            <!--content-->
+            <h1>Thank you</h1>
+            <a href="#home" class="ui-btn">Submit</a>
+
+
+        </article>
+    </section>
+
+
+    <section data-role="page" id="cm" data-theme="b" data-dialog="true" data-close-btn="none">
+        <!--home-->
+        <div data-role="header" data-theme="b">
+            <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>contact Me</h1>
+        </div>
+        <article data-role="content" data-theme="b">
+            <!--content-->
+            <h1>Name : Adesh Shah</h1>
+            <a href="mailto:aadishah74@outlook.com?Subject=Hello%20again" target="_top">Send me a email</a>
+            <br></br>
+            <a href="tel:6476674651"><img src="http://translationgu.ru/wp-content/uploads/2014/05/callme.png" />
+            </a>
+        </article>
+    </section>
+
+
+
+
+    <section data-role="page" id="info" data-theme="b" data-dialog="true" data-close-btn="none">
+        <!--home-->
+        <div data-role="header" data-theme="b">
+            <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+            <!--header-->
+            <h1>All you need to know</h1>
+        </div>
+        <article data-role="content" data-theme="b">
+            <!--content-->
+            <h1>Namaste!!!</h1>
+            <p>Myself Adesh, Student at algonquin college learning Mobile App development. Currently employed as part time as web developer in Listing Machine.</p>
+            <img src="https://pbs.twimg.com/profile_images/378800000566311287/4935ab9dcb5c48bcf81e7879dec76a63_400x400.jpeg">
+            <p>My Strong programming skills are : </p>
+            </br>
+
+            <ol data-role="listview">
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>Jquery</li>
+                <li>php & MySQL</li>
+                <li>Ruby</li>
+            </ol>
+        </article>
+    </section>
+
+
+</body>
+
+</html>
